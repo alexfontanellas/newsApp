@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: stretch;
+}
+
+
+.flex-item {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    float:left;
+    position: relative;
+}
+
+.new:hover {
+  cursor: pointer;
+}
+
+
+.flex-container {
+  width: 100%;
+  min-height: 90vh;
+  margin: .6em auto;
+}
+
+.flex-item {
+  width: 300px;
+  margin-bottom: .5em;
+  padding: 1em;
+}
+
+.image-new {
+  width: 80%;
+  height: 60%;
+  object-fit: fill;
+  object-position: center;
+}
+
+.newspaper .flex-item button {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  padding: 15px;
+  z-index: 5;
+  border: 0;
+}
+.newspaper .flex-item button:hover {
+  cursor: pointer;
+  background: yellow;
+  outline: 0;
+}
+
+/**
+@media all and (min-width: 768px) {
+  .flex-item {
+    width: 50%;
+  }
+}
+
+
+@media all and (min-width: 993px) {
+  .flex-item {
+    width: 20%;
+  }
+}
+
+
+
+@media all and (min-width: 1300px) {
+    body { background: yellow;
+}
+}
+**/

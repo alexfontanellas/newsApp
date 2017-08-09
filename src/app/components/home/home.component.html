@@ -1,0 +1,10 @@
+<div class='flex-container newspaper' *ngFor="let article of articles">
+  <a class="flex-item" *ngFor="let new of article.articles">
+      <img class ="image-new new"[src]="new.urlToImage" (click)="showArticle(new)"/>
+      <h3 class = "new" (click)="showArticle(new)">{{new.title}}</h3>
+      <p>{{new.description}}</p><br>
+      <p>{{new.author}}</p>
+      <!--<img src="fullImagePath" alt="heart"> -->
+      <button (click)="fav(new)">Add to favourites</button>
+  </a>
+</div>

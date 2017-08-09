@@ -1,0 +1,113 @@
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #B4D9FE;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0.9;
+}
+nav > ul  {
+  float: right;
+  list-style: none;
+  margin-left: 50px;
+
+}
+li {
+  display: inline-block;
+  padding-right: 30px;
+
+}
+li > a {
+  list-style: none;
+  text-decoration: none;
+  color:black;
+
+}
+
+
+
+
+
+
+/**
+<section class="flex-container">
+  <div class="flex-item"></div>
+  <div class="flex-item"></div>
+  <div class="flex-item"></div>
+  <div class="flex-item"></div>
+  <div class="flex-item"></div>
+  <div class="flex-item"></div>
+  <div class="flex-item"></div>
+  <div class="flex-item"></div>
+</section>
+
+
+<a href=""><i>IC</i>TEXT</a>
+<a href="">TEXT</a>
+
+CSS
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    }
+
+
+.flex-item {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+     background: black;
+    }
+
+
+.flex-container {
+  background-color: #e1e1e1;
+  width: 90vw;
+  min-height: 90vh;
+  margin: .6em auto;
+}
+
+.flex-item {
+  height: 160px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+
+
+
+@media all and (min-width: 768px) {
+  .flex-item {
+    width: 50%;
+  }
+}
+
+
+@media all and (min-width: 993px) {
+  .flex-item {
+    width: 20%;
+  }
+}
+
+
+
+@media all and (min-width: 1300px) {
+    body { background: yellow;
+}
+
+**/

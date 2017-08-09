@@ -1,0 +1,8 @@
+<h1>Newspapers list</h1>
+<div class = 'flex-container'>
+    <div class='flex-item' *ngFor="let newspaper of newspapers">
+      <img class = "image-new" src="{{newspaper.image}}" />
+      <h3>{{ newspaper.name }}</h3>
+      <button (click)="suscribe(newspaper._id,newspaper)" class = "buttonSuscribe">Suscribe</button>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class='flex-container newspaper' >
+  <a class="flex-item" *ngFor="let article of articles">
+    <a *ngFor = "let new of article">
+      <img class ="image-new new"[src]="new.urlToImage" (click)="showArticle(new)"/>
+      <h3 class = "new" (click)="showArticle(new)">{{new.title}}</h3>
+      <p>{{new.description}}</p><br>
+      <p>{{new.author}}</p>
+      <button (click)="removeFav(new,article)">Remove from favourites</button>
+    </a>
+  </a>
+</div>
